@@ -1,4 +1,4 @@
-﻿{
+{
   "name": "dsh-plugin-sections",
   "version": "0.1.0",
   "description": "Rewrite DeepSeek Harness's own system-prompt sections with your own text: same-name sections shadow the built-in ones, at the global layer and per agent.",
