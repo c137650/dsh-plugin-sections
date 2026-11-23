@@ -1,0 +1,18 @@
+﻿{
+  "name": "dsh-plugin-sections",
+  "version": "0.1.0",
+  "description": "Rewrite DeepSeek Harness's own system-prompt sections with your own text: same-name sections shadow the built-in ones, at the global layer and per agent.",
+  "type": "module",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "author": "lw-storm",
+  "keywords": ["deepseek", "harness", "dsh", "dsh-plugin", "system-prompt", "override"],
+  "dsh": { "bundle": { "patch": "./cordis.patch.yml" } },
+  "exports": {
+    ".": { "default": "./lib/index.js" },
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": ["lib", "prompts", "cordis.patch.yml"],
+  "peerDependencies": { "@deepseek-ai/cordis": "^4.0.1" }
+}
